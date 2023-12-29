@@ -6,7 +6,7 @@ Decorators are functions that are prefixed with the `@` symbol.
 
 ## class decorator
 
-Class decorators in TypeScript are functions that are applied to class declarations. They can be used to modify or enhance the behavior of a class, add metadata, or perform any other kind of logic during class declaration. Class decorators are applied using the `@decorator` syntax just before the class declaration.
+Class decorators in TypeScript are functions that are applied to class declarations. They can be used to modify or enhance the behavior of a class, add metadata, or perform any other kind of logic during class declaration. Class decorators are applied using the `@decorator_name` syntax just before the class declaration.
 
 They receive the constructor of the class as their only parameter.
 
@@ -17,3 +17,7 @@ They receive the constructor of the class as their only parameter.
 A decorator factory is a higher-order function that returns a decorator function. In TypeScript, a decorator factory is used to create decorators with configurable behavior. Decorator factories allow you to pass parameters to decorators, enabling dynamic configuration based on the arguments provided to the factory.
 
 ## property decorator
+
+Property decorators in TypeScript are functions that can be applied to class property declarations. They allow you to observe, modify, or provide metadata for individual properties of a class.
+
+Property decorators are applied to properties within a class. They receive two parameters: the target object and the property name.
