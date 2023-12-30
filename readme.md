@@ -21,3 +21,12 @@ A decorator factory is a higher-order function that returns a decorator function
 Property decorators in TypeScript are functions that can be applied to class property declarations. They allow you to observe, modify, or provide metadata for individual properties of a class.
 
 Property decorators are applied to properties within a class. They receive two parameters: the target object and the property name.
+
+## method decorators
+
+Method decorator is a special kind of declaration applied to a method declaration. It can be used to observe, modify, or replace a method definition. A method decorator is declared just before a method declaration.
+
+They recieve three parameters:
+`target`: The prototype of the class or the constructor function.
+`propertyKey`: The name of the method being decorated.
+`descriptor`: An object that contains the method's descriptor.
