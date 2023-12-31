@@ -30,3 +30,12 @@ They recieve three parameters:
 `target`: The prototype of the class or the constructor function.
 `propertyKey`: The name of the method being decorated.
 `descriptor`: An object that contains the method's descriptor.
+
+## accessor decorator
+
+Accessor decorator in TypeScript is a special kind of decorator that is applied to the getter or setter of a class property. It allows you to modify the behavior of reading from or writing to a property. Accessor decorators are part of the broader category of property decorators, which are used to customize the behavior of class properties.
+
+An accessor decorator is a function that takes three parameters:
+`target`: The constructor function of the class or the prototype of the class (depending on whether the decorator is applied to a static or instance member).
+`propertyKey`: The name of the property to which the decorator is applied.
+`descriptor`: An object containing the property descriptor, including the getter or setter.
