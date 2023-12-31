@@ -39,3 +39,11 @@ An accessor decorator is a function that takes three parameters:
 `target`: The constructor function of the class or the prototype of the class (depending on whether the decorator is applied to a static or instance member).
 `propertyKey`: The name of the property to which the decorator is applied.
 `descriptor`: An object containing the property descriptor, including the getter or setter.
+
+## parameter decorator
+
+parameter decorator is a special type of decorator that can be applied to a parameter declaration within a class constructor. Parameter decorators are declared just before a parameter declaration and are used to observe, modify, or replace the parameter's behavior.
+
+`target`: The constructor function of the class for a non-static member, or the class itself for a static member.
+`methodName`: The name of the method containing the parameter.
+`parameterIndex`: The index of the parameter within the parameter list.
